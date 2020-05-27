@@ -287,14 +287,14 @@ body
   }
 
 }
-/*-------------------KATEGORIJE---------------*/
-.kategorije
+/*-------------------KOMPLETKI---------------*/
+.kompletki
 {
 
   margin: 50px 0;
 
 }
-.kategorije img
+.kompletki img
 {
 
   width: 100%;
@@ -303,7 +303,7 @@ body
   cursor: pointer;
 
 }
-.kategorije img:hover
+.kompletki img:hover
 {
 
   transform: scale(1.1);
@@ -337,6 +337,26 @@ body
   display: flex;
   margin-top: -4px;
   margin-left: 170px;
+
+}
+.col-md-4 h3
+{
+
+  color: #e06377;
+  position: center;
+  font-size: 18px;
+
+}
+.text-block {
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color:	#ffcce6 !important;
+  opacity: 1 !important;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
 /*----------------PRODUCT-TOP-------------*/
@@ -387,13 +407,15 @@ body
   transition: 0.5s;
 
 }
-.col-md-4 h3
-{
+.text-block {
 
-  color: #e06377;
-  position: center;
-  font-size: 24px;
-  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
 /*----------PRODUCT-BOTTOM---------*/
