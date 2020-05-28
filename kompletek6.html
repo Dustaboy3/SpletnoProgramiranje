@@ -30,8 +30,8 @@
     <div class="menu-bar">
       <ul>
         <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Košarica</a></li>
-        <li><a href="#">Prijavi se</a></li>
-        <li><a href="#">Logiraj se</a></li>
+        <li><button class ="registerloginbasket" type="login" name="login" onclick="loginform()">Logiraj se</button></li>
+        <li><button class ="registerloginbasket" type="register" name="register" onclick="registerform()">Registriraj se</button></li>
       </ul>
     </div>
   </div>
@@ -228,6 +228,56 @@
       <p class="Copyright">Ustvaril Domen Jelič</p>
     </div>
   </section>
+
+
+      <div class="form-popup" id="loginForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Logiraj se</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Vnesi email" name="email" required>
+
+          <label for="psw"><b>Geslo</b></label>
+          <input type="password" placeholder="Vnesi geslo" name="psw" required>
+
+          <button type="submit" class="btn">Logiraj se</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Zapri</button>
+        </form>
+      </div>
+
+      <div class="form-popup" id="registerForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Registriraj se</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Vnesi email" name="email" required>
+
+          <label for="psw"><b>Geslo</b></label>
+          <input type="password" placeholder="Vnesi geslo" name="psw" required>
+
+          <label for="pswa"><b>Geslo</b></label>
+          <input type="password" placeholder="Ponovno vnesi geslo" name="psw" required>
+
+          <button type="submit" class="btn">Registriraj se</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Zapri</button>
+        </form>
+      </div>
+
+  <script>
+    function loginform()
+    {
+      document.getElementById("loginForm").style.display = "block";
+    }
+    function registerform()
+    {
+      document.getElementById("registerForm").style.display = "block";
+    }
+    function closeForm()
+    {
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("registerForm").style.display = "none";
+    }
+  </script>
 
   </body>
 

@@ -350,13 +350,15 @@ body
 .text-block {
 
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px !important;
+  right: 28px !important;
   background-color:	#ffcce6 !important;
   opacity: 1 !important;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 5px !important;
+  padding-bottom: 1px !important;
 
 }
 /*----------------PRODUCT-TOP-------------*/
@@ -617,5 +619,96 @@ body
 {
 
   margin-bottom: 50px;
+
+}
+.registerloginbasket
+{
+
+  background-color: #f9d5e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+
+}
+/*-----------LOG-IN, SIGN-UP-------------*/
+{box-sizing: border-box;}
+.open-button
+{
+
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+
+}
+.form-popup
+{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #e06377;
+  z-index: 9;
+
+}
+.form-container
+{
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+
+}
+.form-container input[type=text], .form-container input[type=password]
+{
+
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus
+{
+
+  background-color: #ddd;
+  outline: none;
+
+}
+.form-container .btn
+ {
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+
+}
+.form-container .cancel
+{
+
+  background-color: red;
+
+}
+.form-container .btn:hover, .open-button:hover
+{
+
+  opacity: 1;
 
 }
