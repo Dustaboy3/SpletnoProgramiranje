@@ -28,7 +28,7 @@ body
   background: #fff;
   margin-bottom: 20px;
   border-bottom: 3px solid #e06377 !important;
-  z-index: 2;
+  z-index: 1000;
 
 }
 .logo
@@ -228,7 +228,7 @@ body
   {
 
     width: 34%;
-    z-index: 20;
+    z-index: 2;
     top: 133px;
     position: fixed;
     font-size: 12px;
@@ -322,7 +322,7 @@ body
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 60px;
-  z-index: 1000;
+  z-index: 3;
 
 
 }
@@ -695,8 +695,8 @@ body
 .form-container .btn
 {
 
-  background-color: #4CAF50;
-  color: white;
+  background-color: #f9d5e5;
+  color: black;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -739,7 +739,7 @@ body
 #topbtn:hover
 {
 
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #ccc; /* Add a dark-grey background on hover */
 
 }
 @media only screen and (max-width: 980px)
