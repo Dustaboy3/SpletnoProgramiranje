@@ -319,6 +319,11 @@ body
   height: 40px;
   margin-bottom: 30px;
   display: flex;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 60px;
+  z-index: 1000;
+
 
 }
 .title-box h2
@@ -688,7 +693,7 @@ body
 
 }
 .form-container .btn
- {
+{
 
   background-color: #4CAF50;
   color: white;
@@ -731,10 +736,68 @@ body
   font-size: 18px; /* Increase font size */
 
 }
-
 #topbtn:hover
 {
 
   background-color: #555; /* Add a dark-grey background on hover */
+
+}
+@media only screen and (max-width: 980px)
+{
+
+  #topbtn
+  {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 130px; /* Place the button at the bottom of the page */
+    right: 50px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f9d5e5; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+
+  }
+
+}
+/*-------SMOOTH-SCROLL------*/
+html
+{
+
+  scroll-behavior: smooth;
+
+}
+/*-----SCROLL-BAR-----*/
+/* width */
+::-webkit-scrollbar
+{
+
+  width: 10px;
+
+}
+/* Track */
+::-webkit-scrollbar-track
+{
+
+  background: #f1f1f1;
+
+}
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+
+  background: #f9d5e5;
+
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+
+  background: #f9d5e5;
 
 }
